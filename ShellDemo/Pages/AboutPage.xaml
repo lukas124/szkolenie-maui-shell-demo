@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ShellDemo.Pages.AboutPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="O aplikacji">
+
+    <VerticalStackLayout Padding="16" Spacing="12">
+        <Label FontAttributes="Bold" FontSize="24" Text="Shell w pigułce" />
+        <Label Text="Zakładki (TabBar): //list, //about" />
+        <Label Text="Trasy zarejestrowane w kodzie: details, edit" />
+        <Label x:Name="LocationLabel" TextColor="Gray" />
+
+        <Button Clicked="OnGoToListClicked" Text="Przejdź do listy (//list)" />
+    </VerticalStackLayout>
+
+</ContentPage>

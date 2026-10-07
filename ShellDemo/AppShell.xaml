@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ShellDemo.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:ShellDemo.Pages"
+    Title="ShellDemo">
+
+    <!-- TabBar = dolny pasek zakładek. Każda ShellContent to jedna zakładka.
+         Route nadaje zakładce nazwę trasy: można do niej przejść GoToAsync("//list").
+         ContentTemplate = strona tworzona dopiero przy pierwszym wejściu w zakładkę (leniwie). -->
+    <TabBar>
+        <ShellContent
+            Title="Lista"
+            Route="list"
+            ContentTemplate="{DataTemplate pages:ListPage}" />
+
+        <ShellContent
+            Title="O aplikacji"
+            Route="about"
+            ContentTemplate="{DataTemplate pages:AboutPage}" />
+    </TabBar>
+
+</Shell>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ShellDemo.Pages.DetailsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Szczegóły">
+
+    <VerticalStackLayout Padding="16" Spacing="12">
+        <Label x:Name="IdLabel" FontSize="14" TextColor="Gray" />
+        <Label x:Name="NameLabel" FontAttributes="Bold" FontSize="24" />
+        <Label x:Name="DescriptionLabel" FontSize="16" />
+
+        <Button Clicked="OnEditClicked" Text="Edytuj (przekaż obiekt)" />
+        <Button Clicked="OnBackClicked" Text="Wróć (..)" />
+    </VerticalStackLayout>
+
+</ContentPage>
